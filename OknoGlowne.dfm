@@ -1,4 +1,4 @@
-object Form1: TForm1
+object OknoGlowne: TOknoGlowne
   Left = 125
   Top = 172
   Width = 792
@@ -18,13 +18,13 @@ object Form1: TForm1
   OnPaint = FormPaint
   PixelsPerInch = 96
   TextHeight = 13
-  object PaintBox1: TPaintBox
+  object WykresLosowan: TPaintBox
     Left = 0
     Top = 29
     Width = 784
     Height = 339
     Align = alClient
-    OnMouseMove = PaintBox1MouseMove
+    OnMouseMove = WykresLosowanMouseMove
   end
   object StatusBar1: TStatusBar
     Left = 0
@@ -46,7 +46,7 @@ object Form1: TForm1
     Caption = 'ToolBar1'
     TabOrder = 1
   end
-  object Panel1: TPanel
+  object PanelNajczestszych: TPanel
     Left = 0
     Top = 368
     Width = 784
@@ -54,7 +54,7 @@ object Form1: TForm1
     Align = alBottom
     Color = clInfoBk
     TabOrder = 2
-    OnClick = Panel1Click
+    OnClick = PanelNajczestszychClick
     object Label1: TLabel
       Left = 8
       Top = 8
@@ -62,7 +62,7 @@ object Form1: TForm1
       Height = 13
       Caption = 'Najcz'#281#347'ciej pojawiaj'#261'ce si'#281' liczby:'
     end
-    object Label2: TLabel
+    object EtykietaRanking: TLabel
       Left = 8
       Top = 24
       Width = 32
@@ -73,16 +73,16 @@ object Form1: TForm1
   object MainMenu1: TMainMenu
     Left = 232
     Top = 40
-    object Statystyka1: TMenuItem
+    object MenuStatystyka: TMenuItem
       Caption = 'Statystyka'
-      object Dodaj1: TMenuItem
+      object MenuDodajWynik: TMenuItem
         Caption = 'Dodaj ...'
-        OnClick = Dodaj1Click
+        OnClick = MenuDodajWynikClick
       end
     end
-    object Losowanie1: TMenuItem
+    object MenuLosowanie: TMenuItem
       Caption = 'Losowanie'
-      OnClick = Losowanie1Click
+      OnClick = MenuLosowanieClick
     end
   end
 end

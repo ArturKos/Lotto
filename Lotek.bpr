@@ -4,12 +4,12 @@
   <MACROS>
     <VERSION value="BCB.06.00"/>
     <PROJECT value="Lotek.exe"/>
-    <OBJFILES value="Lotek.obj MAIN.obj Unit2.obj Unit3.obj Unit4.obj"/>
+    <OBJFILES value="Lotek.obj OknoGlowne.obj OknoDodajWynik.obj OknoSzczegolyStatystyk.obj OknoGenerator.obj Statystyka.obj"/>
     <RESFILES value="Lotek.res"/>
     <IDLFILES value=""/>
     <IDLGENFILES value=""/>
     <DEFFILE value=""/>
-    <RESDEPEN value="$(RESFILES) MAIN.dfm Unit2.dfm Unit3.dfm Unit4.dfm"/>
+    <RESDEPEN value="$(RESFILES) OknoGlowne.dfm OknoDodajWynik.dfm OknoSzczegolyStatystyk.dfm OknoGenerator.dfm"/>
     <LIBFILES value=""/>
     <LIBRARIES value="vclx.lib bcbsmp.lib rtl.lib vcl.lib"/>
     <SPARELIBS value="vcl.lib rtl.lib bcbsmp.lib vclx.lib"/>
@@ -55,10 +55,11 @@
   <FILELIST>
       <FILE FILENAME="Lotek.res" FORMNAME="" UNITNAME="Lotek.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="Lotek.cpp" FORMNAME="" UNITNAME="Lotek" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
-      <FILE FILENAME="MAIN.CPP" FORMNAME="Form1" UNITNAME="main" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
-      <FILE FILENAME="Unit2.cpp" FORMNAME="Form2" UNITNAME="Unit2" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
-      <FILE FILENAME="Unit3.cpp" FORMNAME="Form3" UNITNAME="Unit3" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
-      <FILE FILENAME="Unit4.cpp" FORMNAME="Form4" UNITNAME="Unit4" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="OknoGlowne.cpp" FORMNAME="OknoGlowne" UNITNAME="OknoGlowne" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="OknoDodajWynik.cpp" FORMNAME="OknoDodajWynik" UNITNAME="OknoDodajWynik" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="OknoSzczegolyStatystyk.cpp" FORMNAME="OknoSzczegolyStatystyk" UNITNAME="OknoSzczegolyStatystyk" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="OknoGenerator.cpp" FORMNAME="OknoGenerator" UNITNAME="OknoGenerator" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Statystyka.cpp" FORMNAME="" UNITNAME="Statystyka" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
   </FILELIST>
   <BUILDTOOLS>
   </BUILDTOOLS>

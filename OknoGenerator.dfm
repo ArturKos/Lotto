@@ -1,4 +1,4 @@
-object Form4: TForm4
+object OknoGenerator: TOknoGenerator
   Left = 313
   Top = 305
   BorderStyle = bsToolWindow
@@ -16,76 +16,76 @@ object Form4: TForm4
   OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
-  object Button1: TButton
+  object PrzyciskLosuj: TButton
     Left = 8
     Top = 64
     Width = 75
     Height = 25
     Caption = 'Losuj...'
     TabOrder = 0
-    OnClick = Button1Click
+    OnClick = PrzyciskLosujClick
   end
-  object Edit1: TEdit
+  object PoleLiczby1: TEdit
     Left = 8
     Top = 24
     Width = 33
     Height = 21
     TabOrder = 1
-    Text = 'Edit1'
+    Text = 'PoleLiczby1'
   end
-  object Edit2: TEdit
+  object PoleLiczby2: TEdit
     Left = 56
     Top = 24
     Width = 33
     Height = 21
     TabOrder = 2
-    Text = 'Edit2'
+    Text = 'PoleLiczby2'
   end
-  object Edit3: TEdit
+  object PoleLiczby3: TEdit
     Left = 104
     Top = 24
     Width = 33
     Height = 21
     TabOrder = 3
-    Text = 'Edit3'
+    Text = 'PoleLiczby3'
   end
-  object Edit4: TEdit
+  object PoleLiczby4: TEdit
     Left = 152
     Top = 24
     Width = 33
     Height = 21
     TabOrder = 4
-    Text = 'Edit4'
+    Text = 'PoleLiczby4'
   end
-  object Edit5: TEdit
+  object PoleLiczby5: TEdit
     Left = 200
     Top = 24
     Width = 33
     Height = 21
     TabOrder = 5
-    Text = 'Edit5'
+    Text = 'PoleLiczby5'
   end
-  object Edit6: TEdit
+  object PoleLiczby6: TEdit
     Left = 248
     Top = 24
     Width = 33
     Height = 21
     TabOrder = 6
-    Text = 'Edit6'
+    Text = 'PoleLiczby6'
   end
-  object BitBtn1: TBitBtn
+  object PrzyciskCzasowe: TBitBtn
     Left = 96
     Top = 64
     Width = 75
     Height = 25
     Caption = 'Czasowe...'
     TabOrder = 7
-    OnClick = BitBtn1Click
+    OnClick = PrzyciskCzasoweClick
   end
-  object Timer1: TTimer
+  object TimerLosowania: TTimer
     Enabled = False
     Interval = 1
-    OnTimer = Timer1Timer
+    OnTimer = TimerLosowaniaTimer
     Left = 200
     Top = 64
   end

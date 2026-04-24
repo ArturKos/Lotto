@@ -1,7 +1,7 @@
 //---------------------------------------------------------------------------
 
-#ifndef Unit2H
-#define Unit2H
+#ifndef OknoDodajWynikH
+#define OknoDodajWynikH
 //---------------------------------------------------------------------------
 #include <Classes.hpp>
 #include <Controls.hpp>
@@ -10,27 +10,27 @@
 #include "CSPIN.h"
 #include <Buttons.hpp>
 //---------------------------------------------------------------------------
-class TForm2 : public TForm
+class TOknoDodajWynik : public TForm
 {
 __published:	// IDE-managed Components
-        TCSpinEdit *CSpinEdit1;
-        TSpeedButton *SpeedButton1;
-        TSpeedButton *SpeedButton2;
-        TCSpinEdit *CSpinEdit2;
-        TCSpinEdit *CSpinEdit3;
-        TCSpinEdit *CSpinEdit4;
-        TCSpinEdit *CSpinEdit5;
-        TCSpinEdit *CSpinEdit6;
-        void __fastcall SpeedButton2Click(TObject *Sender);
-        void __fastcall SpeedButton1Click(TObject *Sender);
+        TCSpinEdit *PoleLiczby1;
+        TSpeedButton *PrzyciskOk;
+        TSpeedButton *PrzyciskAnuluj;
+        TCSpinEdit *PoleLiczby2;
+        TCSpinEdit *PoleLiczby3;
+        TCSpinEdit *PoleLiczby4;
+        TCSpinEdit *PoleLiczby5;
+        TCSpinEdit *PoleLiczby6;
+        void __fastcall PrzyciskAnulujClick(TObject *Sender);
+        void __fastcall PrzyciskOkClick(TObject *Sender);
         void __fastcall FormActivate(TObject *Sender);
         void __fastcall FormCanResize(TObject *Sender, int &NewWidth,
           int &NewHeight, bool &Resize);
 private:	// User declarations
 public:		// User declarations
-        __fastcall TForm2(TComponent* Owner);
+        __fastcall TOknoDodajWynik(TComponent* Owner);
 };
 //---------------------------------------------------------------------------
-extern PACKAGE TForm2 *Form2;
+extern PACKAGE TOknoDodajWynik *OknoDodajWynik;
 //---------------------------------------------------------------------------
 #endif

@@ -1,7 +1,7 @@
 //---------------------------------------------------------------------------
 
-#ifndef Unit3H
-#define Unit3H
+#ifndef OknoSzczegolyStatystykH
+#define OknoSzczegolyStatystykH
 //---------------------------------------------------------------------------
 #include <Classes.hpp>
 #include <Controls.hpp>
@@ -11,27 +11,27 @@
 #include <ValEdit.hpp>
 #include <Buttons.hpp>
 //---------------------------------------------------------------------------
-class TForm3 : public TForm
+class TOknoSzczegolyStatystyk : public TForm
 {
 __published:	// IDE-managed Components
-        TValueListEditor *v1;
-        TValueListEditor *v2;
-        TSpeedButton *SpeedButton1;
-        TListBox *ListBox1;
+        TValueListEditor *ListaWgKolejnosci;
+        TValueListEditor *ListaWgCzestosci;
+        TSpeedButton *PrzyciskOk;
+        TListBox *ListaLosowan;
         TLabel *Label1;
         TLabel *Label2;
         TLabel *Label3;
-        TValueListEditor *v3;
+        TValueListEditor *ListaWgOkresu;
         TLabel *Label4;
         void __fastcall FormActivate(TObject *Sender);
-        void __fastcall SpeedButton1Click(TObject *Sender);
+        void __fastcall PrzyciskOkClick(TObject *Sender);
         void __fastcall FormCanResize(TObject *Sender, int &NewWidth,
           int &NewHeight, bool &Resize);
 private:	// User declarations
 public:		// User declarations
-        __fastcall TForm3(TComponent* Owner);
+        __fastcall TOknoSzczegolyStatystyk(TComponent* Owner);
 };
 //---------------------------------------------------------------------------
-extern PACKAGE TForm3 *Form3;
+extern PACKAGE TOknoSzczegolyStatystyk *OknoSzczegolyStatystyk;
 //---------------------------------------------------------------------------
 #endif

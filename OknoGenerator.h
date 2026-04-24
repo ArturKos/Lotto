@@ -1,7 +1,7 @@
 //---------------------------------------------------------------------------
 
-#ifndef Unit4H
-#define Unit4H
+#ifndef OknoGeneratorH
+#define OknoGeneratorH
 //---------------------------------------------------------------------------
 #include <Classes.hpp>
 #include <Controls.hpp>
@@ -10,27 +10,27 @@
 #include <Buttons.hpp>
 #include <ExtCtrls.hpp>
 //---------------------------------------------------------------------------
-class TForm4 : public TForm
+class TOknoGenerator : public TForm
 {
 __published:	// IDE-managed Components
-        TButton *Button1;
-        TEdit *Edit1;
-        TEdit *Edit2;
-        TEdit *Edit3;
-        TEdit *Edit4;
-        TEdit *Edit5;
-        TEdit *Edit6;
-        TBitBtn *BitBtn1;
-        TTimer *Timer1;
+        TButton *PrzyciskLosuj;
+        TEdit *PoleLiczby1;
+        TEdit *PoleLiczby2;
+        TEdit *PoleLiczby3;
+        TEdit *PoleLiczby4;
+        TEdit *PoleLiczby5;
+        TEdit *PoleLiczby6;
+        TBitBtn *PrzyciskCzasowe;
+        TTimer *TimerLosowania;
         void __fastcall FormCreate(TObject *Sender);
-        void __fastcall Button1Click(TObject *Sender);
-        void __fastcall Timer1Timer(TObject *Sender);
-        void __fastcall BitBtn1Click(TObject *Sender);
+        void __fastcall PrzyciskLosujClick(TObject *Sender);
+        void __fastcall TimerLosowaniaTimer(TObject *Sender);
+        void __fastcall PrzyciskCzasoweClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
-        __fastcall TForm4(TComponent* Owner);
+        __fastcall TOknoGenerator(TComponent* Owner);
 };
 //---------------------------------------------------------------------------
-extern PACKAGE TForm4 *Form4;
+extern PACKAGE TOknoGenerator *OknoGenerator;
 //---------------------------------------------------------------------------
 #endif

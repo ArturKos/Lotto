@@ -1,4 +1,4 @@
-object Form3: TForm3
+object OknoSzczegolyStatystyk: TOknoSzczegolyStatystyk
   Left = 144
   Top = 156
   BorderIcons = []
@@ -18,13 +18,13 @@ object Form3: TForm3
   OnCanResize = FormCanResize
   PixelsPerInch = 96
   TextHeight = 13
-  object SpeedButton1: TSpeedButton
+  object PrzyciskOk: TSpeedButton
     Left = 336
     Top = 360
     Width = 73
     Height = 22
     Caption = 'OK'
-    OnClick = SpeedButton1Click
+    OnClick = PrzyciskOkClick
   end
   object Label1: TLabel
     Left = 16
@@ -54,7 +54,7 @@ object Form3: TForm3
     Height = 13
     Caption = 'Liczba powtarza si'#281' co:'
   end
-  object v1: TValueListEditor
+  object ListaWgKolejnosci: TValueListEditor
     Left = 16
     Top = 40
     Width = 177
@@ -69,7 +69,7 @@ object Form3: TForm3
       51
       120)
   end
-  object v2: TValueListEditor
+  object ListaWgCzestosci: TValueListEditor
     Left = 200
     Top = 40
     Width = 177
@@ -84,7 +84,7 @@ object Form3: TForm3
       51
       120)
   end
-  object ListBox1: TListBox
+  object ListaLosowan: TListBox
     Left = 584
     Top = 40
     Width = 113
@@ -98,7 +98,7 @@ object Form3: TForm3
     ParentFont = False
     TabOrder = 2
   end
-  object v3: TValueListEditor
+  object ListaWgOkresu: TValueListEditor
     Left = 392
     Top = 40
     Width = 177

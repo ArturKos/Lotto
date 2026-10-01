@@ -1,0 +1,17 @@
+# Borland C++ Builder build artifacts
+*.obj
+*.o
+*.exe
+*.tds
+*.#*
+*.rsm
+*.map
+*.bpl
+*.lsp
+__history/
+__recovery/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
